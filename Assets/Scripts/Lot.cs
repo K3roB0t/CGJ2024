@@ -28,6 +28,7 @@ public class Lot : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.simulated = false;
         transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+        Debug.Log("Chosen");
     }
 
     public void OnMouseDrag()

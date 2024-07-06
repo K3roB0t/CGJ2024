@@ -26,16 +26,16 @@ public class LotBox : MonoBehaviour
     {
         if(other.tag == "Lot")
         {
-            Debug.Log("lot enter");
+            // Debug.Log("lot enter");
             Lot lot = other.GetComponent<Lot>();
             if(lot.isGood == true)
             {
-                Debug.Log("Good lot");
+                // Debug.Log("Good lot");
                 numGood.num += 1;
             }
             else
             {
-                Debug.Log("Bad lot");
+                // Debug.Log("Bad lot");
                 numBad.num += 1;
             }
         }
@@ -45,16 +45,16 @@ public class LotBox : MonoBehaviour
     {
         if(other.tag == "Lot")
         {
-            Debug.Log("lot out");
+            // Debug.Log("lot out");
             Lot lot = other.GetComponent<Lot>();
             if(lot.isGood == true)
             {
-                Debug.Log("Good lot");
+                // Debug.Log("Good lot");
                 numGood.num -= 1;
             }
             else
             {
-                Debug.Log("Bad lot");
+                // Debug.Log("Bad lot");
                 numBad.num -= 1;
             }
         }
